@@ -1,8 +1,3 @@
-#ID-664976297230991410
-#token-NjY0OTc2Mjk3MjMwOTkxNDEw.Xhe5mA.xSXC2dcBsihp4ohxATDFzwn5PzE
-#permisions integer-67648
-#https://discordapp.com/oauth2/authorize?client_id=664976297230991410&scope=bot&permissions=67648
-
 import discord
 from discord.ext import commands
 from discord.utils import get
@@ -16,7 +11,6 @@ from sqlalchemy import create_engine
 from vars import TOKEN
 
 
-# TOKEN = 'NjY0OTc2Mjk3MjMwOTkxNDEw.Xhe5mA.xSXC2dcBsihp4ohxATDFzwn5PzE'
 BOT_PREFIX = '!!'
 
 user_dict  = {}
