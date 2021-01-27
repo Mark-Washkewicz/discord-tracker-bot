@@ -79,7 +79,7 @@ async def on_voice_state_update(user, before, after):
                 #pop dict
                 df = pd.DataFrame({'username':user.name, 'user_id':user.id, 'channel': str(before.channel), 'num_mems':num_mems, 'deafen':before.self_deaf, 'mute': before.self_mute, 'time_in': time_in , 'time_out':time_out, 'delta_time':delta_time.total_seconds()}, index = [0])
                 
-               # print(df.head)
+               
 
                 conn = sqlite3.connect('discord_track.db')
                 df.to_sql(name='discord_track.db', con = conn, index = False, if_exists='append')
@@ -106,7 +106,7 @@ async def on_voice_state_update(user, before, after):
 
                 df = pd.DataFrame({'username':user.name, 'user_id':user.id, 'channel': str(before.channel), 'num_mems':num_mems, 'deafen':before.self_deaf, 'mute': before.self_mute, 'time_in': time_in , 'time_out':time_out, 'delta_time':delta_time.total_seconds()}, index = [0])
                     
-                #print(df.head)
+               
 
                 conn = sqlite3.connect('discord_track.db')
                 df.to_sql(name='discord_track.db', con = conn, index = False, if_exists='append')
@@ -130,7 +130,7 @@ async def on_voice_state_update(user, before, after):
 
                 df = pd.DataFrame({'username':user.name, 'user_id':user.id, 'channel': str(before.channel), 'num_mems':num_mems, 'deafen':before.self_deaf, 'mute': before.self_mute, 'time_in': time_in , 'time_out':time_out, 'delta_time':delta_time.total_seconds()}, index = [0])
                     
-                #print(df.head)
+                
 
                 conn = sqlite3.connect('discord_track.db')
                 df.to_sql(name='discord_track.db', con = conn, index = False, if_exists='append')
