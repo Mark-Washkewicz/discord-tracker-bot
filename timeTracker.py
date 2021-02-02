@@ -175,7 +175,11 @@ async def data(ctx):
 
 
 @bot.command(pass_context = True)
+
+
+#set channel for when first connecting
 async def set(ctx): #voice_channel_id
+
     #First getting the voice channel object
     all_voice_channel = ctx.message.guild.voice_channels
 
